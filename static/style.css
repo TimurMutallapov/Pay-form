@@ -1,0 +1,175 @@
+.bank-form-container h1 {
+    padding-bottom: 60px;
+    text-align: center;
+    color: #323232;
+}
+
+.block-bc-cvc:before {
+    content: "";
+    background-image: url("icon-purse.png");
+    width: 28px;
+    height: 24px;
+    z-index: 1;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+}
+
+.bank-form-container {
+    padding: 50px;
+    border: 2px solid #000000;
+    max-width: 700px;
+    transition: all .7s linear;
+    -webkit-transition: all .7s linear;
+    -ms-transition: all .7s linear;
+    -o-transition: all .7s linear;
+    -moz-transition: all .7s linear;
+}
+
+.container-form {
+    max-width: 275px;
+    margin: 0 auto;
+}
+
+.container-group-form {
+    margin-bottom: 3rem;
+}
+
+.block-bc-date {
+    transition: width .6s linear;
+    -webkit-transition: width .6s linear;
+    -ms-transition: width .6s linear;
+    -o-transition: width .6s linear;
+    -moz-transition: width .6s linear;
+    width: 40%;
+    float: left;
+}
+
+.block-bc-cvc {
+    transition: width .6s linear;
+    -webkit-transition: width .6s linear;
+    -ms-transition: width .6s linear;
+    -o-transition: width .6s linear;
+    -moz-transition: width .6s linear;
+    width: 50%;
+    float: right;
+    position: relative;
+}
+
+.clearfix:before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.bc-group:focus {
+    box-shadow: 0 0 0;
+    outline: 0 none;
+    border-bottom: 2px solid #d9d9d9;
+
+}
+
+.bc-group:focus:not(.disabled){
+    border-bottom: 2px solid #50f549;
+    -webkit-transition: all .5s linear;
+    -ms-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    transition: all .5s linear;
+}
+
+.bc-group {
+    border: none;
+    border-bottom: 2px solid #d9d9d9;
+    border-radius: 0;
+    outline:0;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.disabled {
+    opacity: 0.4;
+    cursor: default;
+    -webkit-transition: all .5s linear;
+    -ms-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    transition: all .5s linear;
+
+}
+
+.disabled-value {
+    opacity: 0.7;
+    cursor: default;
+    border-bottom: 2px solid #336b8a;
+    -webkit-transition: all .5s linear;
+    -ms-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    transition: all .5s linear;
+
+}
+
+.pr {
+    position:  relative;
+}
+
+.icon-tick {
+    display: block;
+    background-image: url(../image/icon-tick1.png);
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    bottom: 7px;
+    opacity: 0;
+    -webkit-transition: all .5s linear;
+    -ms-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    transition: all .5s linear;
+}
+
+.block-bc-cvc .icon-tick {
+    right: 27px;
+}
+.disabled-value ~ .icon-tick{
+    opacity: .7;
+}
+
+
+.btn-submit,
+.btn-submit:hover,
+.btn-submit:focus,
+.btn-submit:visited{
+    border: none;
+    outline: none;
+    color: white;
+
+}
+
+.btn-submit:hover:not(.disabled) {
+    background-color: #00d2f0;
+
+}
+
+.btn-submit {
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+}
+
+.btn-submit:not(.disabled) {
+    background-color: #3caff0;
+    -webkit-transition: all .5s linear;
+    -ms-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    transition: all .5s linear;
+    cursor: pointer;
+}

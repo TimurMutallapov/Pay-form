@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bank form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+        <div class="bank-form-container container">
+        <header><h1>Введите карточные данные</h1></header>
+        <form id="bc-form" class="form-block-bc" method="post" action="/kek">
+            <div class="container-form">
+                <div class="form-group container-group-form">
+                    <label for="bc-number">Номер карты</label>
+                    <input autocomplete="off" id="bc-number" name="CardNumber" type="text" name="CardNumber" class="form-control bc-group bc-number" maxlength="19" placeholder="0000-0000-0000-0000">
+                </div>
+                <div class="form-group container-group-form block-bc-date">
+                    <label for="bc-date">Месяц/Год</label>
+                    <input autocomplete="off" id="bc-date" type="text" name="Date" class="form-control bc-group bc-date disabled" maxlength="4" placeholder="07/22">
+                </div>
+                <div class="form-group container-group-form block-bc-cvc">
+                    <label for="bc-cvc">CVC</label>
+                    <input autocomplete="off" id="bc-cvc" type="password" name="CVC" class="form-control bc-group bc-cvc disabled" maxlength="3" placeholder="CVC/CVV">
+                </div>
+                <div class="form-group container-group-form clearfix">
+                    <label for="bc-holder">Владелец карты</label>
+                    <input autocomplete="off" id="bc-holder" type="text" name="CardName" class="form-control bc-group bc-holder disabled" placeholder="Name">
+                </div>
+                <button id="btn" class="btn-submit disabled" type="submit"> Отправить </button>
+            </div>
+        </form>
+        </div>
+</body>
+</html>
