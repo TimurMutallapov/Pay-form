@@ -27,7 +27,7 @@ func main() {
 			CARDNUMBER string `json:"CardNumber"`
 			DATE string `json:"Date"`
 		}
-		Xuy := Pay{name,cvc,cardNumber,date}
+		Lol := Pay{name,cvc,cardNumber,date}
 		bytes,err := json.Marshal(Kek)
 		if err != nil {
 			fmt.Println("Okey")
